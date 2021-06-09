@@ -1,0 +1,28 @@
+<nav class="nav-bar">
+  <div class='nav-wrapper light-blue accent-3'>
+    <a href='#' class='brand-logo logo'>  Courses App</a>
+    <ul id='nav-mobile' class='right hide-on-med-and-down'>
+      {{#if isHome}}
+        <li class='active'><a href='/'>Главный</a></li>
+      {{else}}
+        <li><a href='/'>Главный</a></li>
+      {{/if}}
+      {{#if isCourse}}
+        <li class='active'><a href='/courses'>Курсы</a></li>
+      {{else}}
+        <li><a href='/courses'>Курсы</a></li>
+      {{/if}}
+      {{#if isAdd}}
+        <li class='active'><a href='/add'>Добавить курсы</a></li>
+      {{else}}
+        <li><a href='/add'>Добавить курсы</a></li>
+      {{/if}}
+
+      {{#if isCard}}
+        <li class='active'><a href='/card'>Корзина</a></li>
+      {{else}}
+        <li><a href='/card'>Корзина</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>
